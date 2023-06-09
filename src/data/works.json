@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Front-end Developer Intern",
+        "company": "Tuna Technology Pvt. Ltd., Butwal, Nepal",
+        "dateStarted": "Sep, 2022",
+        "dateEnd": "Jan, 2023",
+        "description": [
+            "Developed a highly responsive, efficient, and scalable front-end for a web application using the React framework.",
+            "Implemented Redux to streamline and optimize data flow within the application.",
+            "Leveraged WordPress as a CMS, seamlessly integrating it with React through Apollo.",
+            "Applied Tailwind CSS, SASS, and Bootstrap to create visually appealing and cohesive user interfaces for the application."
+        ]
+    }
+]

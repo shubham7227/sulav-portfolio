@@ -1,0 +1,92 @@
+[
+    {
+        "id": 8,
+        "title": "Growcomers: Online Grocery Store",
+        "featuredImage": "/Growcomers.png",
+        "url": "https://growcomers.netlify.app/",
+        "stack": [
+            "Web Application","Stripe", "React", "Node.js", "Flask", "Machine Learning", "Blockchain"
+        ],
+        "description": "<p>Growcomers is a full-fledged E-commerce platform with: <ul style='list-style: disc; padding-left: 1rem;'><li>Hybrid product recommender system of neural collaborative filtering, content-based filtering and popularity recommender</li><li> Chatbot</li><li>Fuzzy matching based smart search</li><li>Online payments using credit cards and cryptocurrency</li><li>Invoice generation</li><li>Automatic email delivery.</li></ul></p>"
+    },
+    {
+        "id": 7,
+        "title": "Paisa: Expense Tracker",
+        "featuredImage": "/Paisa.png",
+        "url": "https://paisha-app.web.app/",
+        "stack": [
+            "Web Application","React", "Firebase", "Tailwind"
+        ],
+        "description": "<p>Paisa is an online expense tracking application that allows users to record their expense and income with respect to their banks and wallets which makes the tracking easier. In this project, I was involved in frontend development and firestore database integration in the application.</p>"
+    },
+    {
+        "id": 6,
+        "title": "Tuna Technology Pvt. Ltd.",
+        "featuredImage": "/Tuna.png",
+        "url": "https://tunatechnology.com",
+        "stack": [
+            "Website","React", "WordPress", "SASS", "Bootstrap"
+        ],
+        "description": "<p>Tuna Technology is a cutting-edge technology company that provides various products for bussinesses to scale and transform. The website was redesigned with new UI and wordpress CMS. And I was involved in frontend development, wordpress implementation and wordpress integration using Apollo.</p>"
+    },
+    {
+        "id": 5,
+        "title": "Siddhartha Co-operative Ltd.",
+        "featuredImage": "/Siddhartha.png",
+        "url": "https://siddharthacooperative.com",
+        "stack": [
+            "Website","React", "WordPress", "SASS", "Bootstrap"
+        ],
+        "description": "<p>This informative website serves as a point of information online for Siddhartha multipurpose co-operative organization. In this project, I was involved in frontend development, wordpress implementation and wordpress integration using Apollo.</p>"
+    },
+    {
+        "id": 4,
+        "title": "Joraum Solutions Pvt. Ltd.",
+        "featuredImage": "/Joraum.png",
+        "url": "https://joraum.com",
+        "stack": [
+            "Website","React", "WordPress", "SASS", "Bootstrap"
+        ],
+        "description": "<p>JSPL is a product sales and services company. The website was upgraded from a static website to React and Wordpress CMS without changing the UI. I was involved in overall process of upgrading the website. </p>"
+    },
+    {
+        "id": 3,
+        "title": "Feedback Application",
+        "featuredImage": "/Feedback.png",
+        "url": "https://feedbackscreen.netlify.app",
+        "stack": [
+            "Web Application","React", "Node.js", "MongoDB", "Tailwind", "Chart.js"
+        ],
+        "description": "<p>The feedback application records the feedback of the user for a given question. The application provides: <ul style='list-style: disc; padding-left: 1rem;'><li>Updation of question displayed in the feedback screen</li><li>Automatic recording of image of the person giving the feedback along with date and time.</li><li>Display the report for the admin along with filters, graphs and customizations</li><li>Downloading of report in XLS format</li><li>Printing of the report</li></ul></p>"
+    },
+    {
+        "id": 2,
+        "title": "Intrance: Online Entrance Preparation",
+        "featuredImage": "/Intrance.png",
+        "url": "https://intrance.netlify.app/",
+        "stack": [
+            "Web Application","React", "Node.js", "MongoDB", "Tailwind", "Redux"
+        ],
+        "description": "<p>Intrance is an online competitive entrance preparation platform for different examinations where the student can take part in weekly competitive examinations. The platform provides: <ul style='list-style: disc; padding-left: 1rem;'><li>Admin panel to manage questions, create weekly exam with customizations, view results and manage users</li><li>Competitive weekly examinations for different topics with learderboards</li><li>Practice session where the diffculty level of questions is updated based on past answers</li></ul></p>"
+    },
+    {
+        "id": 1,
+        "title": "CryptoVote: Blockchain Secured Voting Application",
+        "featuredImage": "/Cryptovote.png",
+        "url": "https://github.com/shubham7227/Cryptovote",
+        "stack": [
+            "Android","Java", "FXML", "Firebase", "Ethereum"
+        ],
+        "description": "<p>Cryptovote is an android application designed for decentralized voting that runs on a Virtual Ethereum Network (EVN). The main application was designed using Core Java and the blockchain functionalities were embedded with the use of Solidity.</p>"
+    },
+    {
+        "id": 0,
+        "title": "College Event Management System",
+        "featuredImage": "/EventMgmt.png",
+        "url": "https://eventics.onrender.com",
+        "stack": [
+            "Web Application","JavaScript", "Node.js", "MySQL", "HTML/CSS"
+        ],
+        "description": "<p>CEMS is a website for clubs in college to effectively manage the events and for students to find all the ongoing events on a single platform.</p>"
+    }
+]
