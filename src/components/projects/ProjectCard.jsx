@@ -6,15 +6,15 @@ import { BsBoxArrowInUpRight } from "react-icons/bs";
 
 const ProjectCard = ({ data }) => {
   return (
-    <motion.div
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={slideOutAnimation}
-      className="flex flex-col gap-4"
-    >
+    <div className="flex flex-col gap-4">
       <a href={data.url} target="_blank" rel="noreferrer">
-        <div className="w-full overflow-hidden rounded-xl">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={slideOutAnimation}
+          className="w-full overflow-hidden rounded-xl"
+        >
           <Image
             src={data.featuredImage}
             className="object-cover rounded-xl hover:scale-110 duration-500 transition-all"
@@ -22,9 +22,15 @@ const ProjectCard = ({ data }) => {
             height={379}
             width={379}
           />
-        </div>
+        </motion.div>
       </a>
-      <div className="flex flex-col gap-3">
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={slideOutAnimation}
+        className="flex flex-col gap-3"
+      >
         <h3 className="heading3 leading-tight">{data.title}</h3>
         <div className="flex flex-col gap-3">
           <div className="flex flex-row gap-2 flex-wrap">
@@ -57,8 +63,8 @@ const ProjectCard = ({ data }) => {
           </div>
           {/* </div> */}
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

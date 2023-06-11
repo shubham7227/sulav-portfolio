@@ -13,7 +13,7 @@ import TextContainer from "../hero/TextContainer";
 const About = () => {
   return (
     <section id="about" className="pt-[7rem]">
-      <div id="aboutt" className="bg-backgroundSecondary">
+      <div className="bg-backgroundSecondary w-full overflow-hidden">
         <div className="main-container relative py-[3rem]">
           <div className="h-[150px] w-[150px] absolute dots-background right-0 z-0"></div>
           <div className="sm:py-[4rem] py-[2rem] px-[1.5rem] flex sm:flex-row flex-col items-center justify-between md:gap-[4rem] gap-[2rem] sm:gap-[1rem] z-10">

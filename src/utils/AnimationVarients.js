@@ -47,6 +47,24 @@ export const slideOutAnimation = {
   },
 };
 
+export const slideOutAnimation2 = {
+  offscreen: {
+    x: 40,
+    y: 40,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      damping: 12,
+      stiffness: 100,
+    },
+  },
+};
+
 export const slideRightAnimation = {
   offscreen: {
     x: -60,
