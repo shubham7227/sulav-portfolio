@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BsBoxArrowInUpRight } from "react-icons/bs";
 
 const ProjectCard = ({ data }) => {
   return (
@@ -9,15 +10,13 @@ const ProjectCard = ({ data }) => {
             src={data.featuredImage}
             className="object-cover rounded-xl hover:scale-110 duration-500 transition-all"
             alt=""
-            height={380}
-            width={380}
+            height={379}
+            width={379}
           />
         </div>
       </a>
       <div className="flex flex-col gap-3">
-        <a href={data.url} target="_blank" rel="noreferrer">
-          <h3 className="heading3 leading-tight">{data.title}</h3>
-        </a>
+        <h3 className="heading3 leading-tight">{data.title}</h3>
         <div className="flex flex-col gap-3">
           <div className="flex flex-row gap-2 flex-wrap">
             {data.stack.map((entry, key) => (
@@ -36,6 +35,17 @@ const ProjectCard = ({ data }) => {
             className="text-primary font-light font-karla"
             dangerouslySetInnerHTML={{ __html: data.description }}
           />
+          <div>
+            <a
+              href={data.url}
+              target="_blank"
+              rel="noreferrer"
+              className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 pl-3 pr-4 bg-backgroundSecondary border border-backgroundLight duration-150 transition-all font-light font-karla text-sm hover:bg-backgroundLight"
+            >
+              <BsBoxArrowInUpRight />
+              <span className="">View Project</span>
+            </a>
+          </div>
           {/* </div> */}
         </div>
       </div>

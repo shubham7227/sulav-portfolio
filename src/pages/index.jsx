@@ -8,7 +8,7 @@ import Navbar from "@/components/hero/Navbar";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 
-export default function Home({ data }) {
+export default function Home() {
   return (
     <main className="bg-background ">
       <Header />
@@ -22,12 +22,4 @@ export default function Home({ data }) {
       <MailIcon />
     </main>
   );
-}
-
-export async function getServerSideProps() {
-  return {
-    props: {
-      data: "",
-    },
-  };
 }

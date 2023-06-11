@@ -17,7 +17,7 @@
         "stack": [
             "Web Application","React", "Firebase", "Tailwind"
         ],
-        "description": "<p>Paisa is an online expense tracking application that allows users to record their expense and income with respect to their banks and wallets which makes the tracking easier. In this project, I was involved in frontend development and firestore database integration in the application.</p>"
+        "description": "<p>Paisa is an online expense tracking application that allows users to record their expense and income with respect to their banks and wallets which makes the tracking easier. In this project, I was involved in frontend development and firestore database integration.</p>"
     },
     {
         "id": 6,
@@ -25,9 +25,9 @@
         "featuredImage": "/Tuna.png",
         "url": "https://tunatechnology.com",
         "stack": [
-            "Website","React", "WordPress", "SASS", "Bootstrap"
+            "Website","Next JS", "WordPress", "SASS", "Bootstrap"
         ],
-        "description": "<p>Tuna Technology is a cutting-edge technology company that provides various products for bussinesses to scale and transform. The website was redesigned with new UI and wordpress CMS. And I was involved in frontend development, wordpress implementation and wordpress integration using Apollo.</p>"
+        "description": "<p>Tuna Technology is a cutting-edge technology company that provides various products for bussinesses to scale and transform. The website was redesigned with new UI and upgraded to use Next JS and wordpress CMS. And I was involved in frontend development, wordpress implementation and wordpress integration using Apollo.</p>"
     },
     {
         "id": 5,

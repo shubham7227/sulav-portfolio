@@ -5,13 +5,13 @@ import { profile } from "@/assets";
 const About = () => {
   return (
     <section id="about" className="pt-[7rem]">
-      <div className="bg-backgroundSecondary">
+      <div id="aboutt" className="bg-backgroundSecondary">
         <div className="main-container relative py-[3rem]">
           <div className="h-[150px] w-[150px] absolute dots-background right-0 z-0"></div>
-          <div className="sm:py-[4rem] py-[2rem] md:px-[2rem] sm:px-0 px-[1.5rem] flex sm:flex-row flex-col items-center md:gap-[4rem] gap-[2rem] sm:gap-[1rem] z-10">
-            <div className="flex flex-col gap-4 z-10 flex-1">
+          <div className="sm:py-[4rem] py-[2rem] px-[1.5rem] flex sm:flex-row flex-col items-center justify-between md:gap-[4rem] gap-[2rem] sm:gap-[1rem] z-10">
+            <div className="flex flex-col gap-4 z-10 basis-1/3">
               <h2 className="sm:hidden block heading2 text-center">About</h2>
-              <div className="md:px-[2rem] px-[1rem] w-full z-10">
+              <div className="w-full z-10">
                 <Image
                   src={profile}
                   className="rounded-xl h-full w-full object-cover z-10"
@@ -19,7 +19,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-4 basis-1/2 z-10">
+            <div className="flex flex-col gap-4 basis-2/3 z-10">
               <h2 className="heading2 sm:block hidden">About</h2>
               <div className="flex flex-col gap-2">
                 <p className="text-primary font-karla font-light">
@@ -57,7 +57,7 @@ const About = () => {
                 <a
                   href="https://drive.google.com/file/d/1UXDc7cyS6_gwEzkHbQaEYnbg82IRLg6e/view?usp=sharing"
                   target="_blank"
-                  className="flex flex-row gap-3 items-center text-primary rounded-xl py-2 pl-4 pr-5 bg-backgroundLight duration-150 transition-all font-light font-karla"
+                  className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 pl-4 pr-5 bg-backgroundSecondary border border-backgroundLight duration-150 transition-all font-light font-karla hover:bg-backgroundLight"
                   rel="noreferrer"
                 >
                   <BsBoxArrowInUpRight />

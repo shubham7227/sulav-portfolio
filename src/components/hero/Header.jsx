@@ -8,7 +8,9 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY || window.pageYOffset;
-      setIsScrolled(scrollPosition >= window.innerHeight);
+      setIsScrolled(
+        scrollPosition >= document.getElementById("hero").offsetHeight
+      );
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -21,7 +23,7 @@ const Header = () => {
   return (
     <div
       className={`sm:py-8 py-5 sm:fixed absolute sm:top-0 w-full ${
-        isScrolled ? "bg-opacity-10 backdrop-blur-xl" : ""
+        isScrolled ? "bg-background bg-opacity-80 backdrop-blur-xl" : ""
       } z-20`}
     >
       <div className="sm:main-container">
