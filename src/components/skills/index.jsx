@@ -19,7 +19,11 @@ import {
   SiRedux,
   SiTailwindcss,
 } from "react-icons/si";
+
 import SkillCard from "./SkillCard";
+import TextContainer from "../hero/TextContainer";
+import { motion } from "framer-motion";
+import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
 
 const data = [
   {
@@ -98,9 +102,15 @@ const Skills = () => {
       <div className="py-[2rem}">
         <div className="flex flex-row items-center relative">
           <div className="h-[130px] w-[60px] absolute dots-background left-2 z-0" />
-          <h2 className="heading2 z-10 main-container sm:px-0 px-[1rem]">
-            Skills
-          </h2>
+          <motion.h2
+            variants={wordsContainerNoDelay}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="heading2 z-10 main-container sm:px-0 px-[1rem]"
+          >
+            <TextContainer text="Skills" />
+          </motion.h2>
         </div>
         <div className="main-container pt-[3rem] px-[1.5rem]">
           <div className="grid md:grid-cols-6 sm:grid-cols-4 grid-cols-3 md:gap-x-12 md:gap-y-8 gap-x-4 gap-y-4 text-primary">

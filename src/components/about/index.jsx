@@ -1,6 +1,14 @@
+import { motion } from "framer-motion";
+import {
+  slideLeftAnimation,
+  slideRightAnimation,
+  wordsContainerNoDelay,
+} from "@/utils/AnimationVarients";
+
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import Image from "next/image";
 import { profile } from "@/assets";
+import TextContainer from "../hero/TextContainer";
 
 const About = () => {
   return (
@@ -10,16 +18,36 @@ const About = () => {
           <div className="h-[150px] w-[150px] absolute dots-background right-0 z-0"></div>
           <div className="sm:py-[4rem] py-[2rem] px-[1.5rem] flex sm:flex-row flex-col items-center justify-between md:gap-[4rem] gap-[2rem] sm:gap-[1rem] z-10">
             <div className="flex flex-col gap-4 z-10 basis-1/3">
-              <h2 className="sm:hidden block heading2 text-center">About</h2>
-              <div className="w-full z-10">
+              <motion.h2
+                variants={wordsContainerNoDelay}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                className="sm:hidden block heading2 text-center"
+              >
+                <TextContainer text="About" />
+              </motion.h2>
+              <motion.div
+                variants={slideRightAnimation}
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.2 }}
+                className="w-full z-10"
+              >
                 <Image
                   src={profile}
                   className="rounded-xl h-full w-full object-cover z-10"
                   alt="Profile"
                 />
-              </div>
+              </motion.div>
             </div>
-            <div className="flex flex-col gap-4 basis-2/3 z-10">
+            <motion.div
+              variants={slideLeftAnimation}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.2 }}
+              className="flex flex-col gap-4 basis-2/3 z-10"
+            >
               <h2 className="heading2 sm:block hidden">About</h2>
               <div className="flex flex-col gap-2">
                 <p className="text-primary font-karla font-light">
@@ -64,7 +92,7 @@ const About = () => {
                   <span className="">Resume</span>
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

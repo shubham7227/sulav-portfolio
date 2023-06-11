@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { CiMail, CiPhone } from "react-icons/ci";
 import Footer from "./Footer";
 import {
@@ -6,18 +7,44 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
+import {
+  scaleOutAnimation,
+  slideOutAnimation,
+  wordsContainerNoDelay,
+} from "@/utils/AnimationVarients";
+import TextContainer from "../hero/TextContainer";
 
 const Contact = () => {
   return (
     <section id="contact" className="main-container">
       <div className="py-[5rem] flex flex-col justify-center items-center gap-8">
         <div>
-          <p className="text-textDim font-karla sm:max-w-[60%] text-center mx-auto">
+          <motion.p
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={slideOutAnimation}
+            className="text-textDim font-karla sm:max-w-[60%] text-center mx-auto"
+          >
             Have an idea?
-          </p>
-          <h2 className="heading2 text-center">Let&apos;s Connect</h2>
+          </motion.p>
+          <motion.h2
+            variants={wordsContainerNoDelay}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="heading2 text-center"
+          >
+            <TextContainer text="Let's Connect" />
+          </motion.h2>
         </div>
-        <div className="flex sm:flex-row flex-col sm:gap-8 gap-4 items-center">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={slideOutAnimation}
+          className="flex sm:flex-row flex-col sm:gap-8 gap-4 items-center"
+        >
           <a
             href="mailto:girishubham77@gmail.com"
             className="py-3 px-5 flex flex-row gap-2 text-primary bg-backgroundSecondary rounded-xl shadow-md items-center hover:bg-backgroundLight duration-150 transition-all font-light"
@@ -32,9 +59,15 @@ const Contact = () => {
             <CiPhone className="text-[1.4rem]" />
             <span className="">+977-9866309870</span>
           </a>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-row gap-4 items-center">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={scaleOutAnimation}
+          className="flex flex-row gap-4 items-center"
+        >
           <a
             href="https://github.com/shubham7227"
             target="_blank"
@@ -67,7 +100,7 @@ const Contact = () => {
               <FaWhatsapp className="text-[24px]" />
             </div>
           </a>
-        </div>
+        </motion.div>
       </div>
       <Footer />
     </section>

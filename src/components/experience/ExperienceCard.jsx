@@ -1,7 +1,13 @@
-/* eslint-disable react/prop-types */
+import { motion } from "framer-motion";
+import { slideOutAnimation } from "@/utils/AnimationVarients";
+
 const ExperienceCard = ({ data, active }) => {
   return (
-    <div
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={slideOutAnimation}
       className={`sm:py-12 sm:px-10 py-8 px-6 ${
         active ? "bg-backgroundSecondary shadow-lg" : "cursor-pointer"
       } rounded-xl flex flex-col gap-5 mx-6`}
@@ -24,7 +30,7 @@ const ExperienceCard = ({ data, active }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

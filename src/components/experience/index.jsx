@@ -1,8 +1,14 @@
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 
 import ExpeienceData from "../../data/works.json";
 import ExperienceCard from "./ExperienceCard";
 import { useState } from "react";
+import {
+  wordsContainer,
+  wordsContainerNoDelay,
+} from "@/utils/AnimationVarients";
+import TextContainer from "../hero/TextContainer";
 
 const Experience = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -42,7 +48,15 @@ const Experience = () => {
   return (
     <section id="experience" className="main-container pt-[10rem] mt-[2rem]">
       <div className="text-center flex flex-row items-center relative">
-        <h2 className="heading2 z-10">Work Experience</h2>
+        <motion.h2
+          variants={wordsContainerNoDelay}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="heading2 z-10"
+        >
+          <TextContainer text="Work Experience" />
+        </motion.h2>
         <div className="h-[100px] w-[150px] absolute dots-background right-0 z-0"></div>
       </div>
       <div className="pt-[2rem] md:px-[3rem]">

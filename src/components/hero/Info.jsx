@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import {
   scaleOutAnimation,
   slideOutAnimation,
+  wordsContainer,
 } from "@/utils/AnimationVarients";
 import TextContainer from "./TextContainer";
 
@@ -33,10 +34,14 @@ const Info = () => {
         >
           SOFTWARE ENGINEER
         </motion.p>
-        {/* <h1 className="uppercase font-prompt font-semibold sm:text-[64px] text-[52px] text-primary leading-tight">
-          SULAV GIRI
-        </h1> */}
-        <TextContainer text="SULAV GIRI" />
+        <motion.h1
+          className="uppercase font-prompt font-semibold sm:text-[64px] text-[52px] text-primary leading-tight"
+          variants={wordsContainer}
+          initial="hidden"
+          animate="visible"
+        >
+          <TextContainer text="SULAV GIRI" />
+        </motion.h1>
       </div>
     </div>
   );

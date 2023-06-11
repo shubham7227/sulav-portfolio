@@ -1,9 +1,18 @@
+import { slideOutAnimation } from "@/utils/AnimationVarients";
+import { motion } from "framer-motion";
+
 import Image from "next/image";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 
 const ProjectCard = ({ data }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={slideOutAnimation}
+      className="flex flex-col gap-4"
+    >
       <a href={data.url} target="_blank" rel="noreferrer">
         <div className="w-full overflow-hidden rounded-xl">
           <Image
@@ -49,7 +58,7 @@ const ProjectCard = ({ data }) => {
           {/* </div> */}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
