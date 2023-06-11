@@ -22,6 +22,7 @@ const Info = () => {
           src={profile}
           className="h-full w-full object-cover rounded-full"
           alt="profile"
+          priority
         />
       </motion.div>
       <div className="text-center">
