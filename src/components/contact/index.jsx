@@ -8,6 +8,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import {
+  fadeAnimation,
   scaleOutAnimation,
   slideOutAnimation,
   wordsContainerNoDelay,
@@ -42,7 +43,7 @@ const Contact = () => {
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.2 }}
-          variants={slideOutAnimation}
+          variants={fadeAnimation}
           className="flex sm:flex-row flex-col sm:gap-8 gap-4 items-center"
         >
           <a

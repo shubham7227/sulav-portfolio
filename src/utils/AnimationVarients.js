@@ -32,6 +32,20 @@ export const scaleInAnimation = {
   },
 };
 
+export const fadeAnimation = {
+  offscreen: {
+    opacity: 0,
+  },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      type: "tween",
+      ease: "easeOut",
+      duration: 0.5,
+    },
+  },
+};
+
 export const slideOutAnimation = {
   offscreen: {
     y: 40,
