@@ -67,7 +67,7 @@
         "stack": [
             "Web Application","React", "Node.js", "MongoDB", "Tailwind", "Redux"
         ],
-        "description": "<p>Intrance is an online competitive entrance preparation platform for different examinations where the student can take part in weekly competitive examinations. The platform provides: <ul style='list-style: disc; padding-left: 1rem;'><li>Admin panel to manage questions, create weekly exam with customizations, view results and manage users</li><li>Competitive weekly examinations for different topics with learderboards</li><li>Practice session where the diffculty level of questions is updated based on past answers</li></ul></p>"
+        "description": "<p>Intrance is an online competitive entrance preparation platform for different examinations where the student can take part in weekly competitive examinations. The platform provides: <ul style='list-style: disc; padding-left: 1rem;'><li>Admin panel to manage questions, create weekly exam with customizations, view results and manage users</li><li>Competitive weekly examinations for different topics with leaderboards</li><li>Practice session where the difficulty level of questions is updated based on past answers</li></ul></p>"
     },
     {
         "id": 1,
