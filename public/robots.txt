@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://www.sulavgiri.com.np
+
+# Sitemaps
+Sitemap: https://www.sulavgiri.com.np/sitemap.xml
