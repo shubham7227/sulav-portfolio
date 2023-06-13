@@ -72,9 +72,8 @@ export const slideOutAnimation2 = {
     x: 0,
     opacity: 1,
     transition: {
-      type: "spring",
-      damping: 12,
-      stiffness: 100,
+      type: "tween",
+      duration: 0.5,
     },
   },
 };
