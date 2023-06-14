@@ -113,7 +113,7 @@ const Skills = () => {
           </motion.h2>
         </div>
         <div className="main-container pt-[3rem] px-[1.5rem] w-full overflow-hidden">
-          <div className="grid md:grid-cols-6 sm:grid-cols-4 grid-cols-3 md:gap-x-12 md:gap-y-8 gap-x-4 gap-y-4 text-primary">
+          <div className="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-4 grid-cols-3 md:gap-x-12 md:gap-y-8 gap-x-4 gap-y-4 text-primary">
             {data.map((entry, key) => (
               <div className="col-span-1" key={key}>
                 <SkillCard icon={entry.icon} title={entry.title} />

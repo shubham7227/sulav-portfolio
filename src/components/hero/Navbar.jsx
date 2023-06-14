@@ -28,8 +28,14 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="sm:sticky sm:pt-8 pt-5 sm:top-0 w-max mx-auto relative z-30">
-      <div className="flex sm:flex-row flex-col items-center md:gap-14 sm:gap-2 gap-6 sm:h-[24px]">
+    <nav
+      className={`sm:sticky sm:pt-8 pt-5 sm:top-0 w-max relative z-30 ${
+        activeSection !== "hero"
+          ? "md:mr-auto md:ml-auto sm:mr-0 md:pr-0 sm:pr-5 ml-auto mr-auto"
+          : "mx-auto"
+      }`}
+    >
+      <div className="flex sm:flex-row flex-col items-center lg:gap-14 sm:gap-2 gap-6 sm:h-[24px]">
         <a
           href="#experience"
           className={`uppercase py-1 sm:px-6 md:px-8 px-8 rounded-[30px] hover:text-primary hover:outline outline-primary outline-1 duration-150 transition-all ${

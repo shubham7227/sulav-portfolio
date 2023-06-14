@@ -29,14 +29,13 @@ const Experience = () => {
     afterChange: handleAfterChange,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 2,
-          draggable: true,
+          slidesToShow: 1,
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           draggable: true,

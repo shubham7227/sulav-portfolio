@@ -26,7 +26,7 @@ const Header = () => {
         isScrolled ? "bg-background bg-opacity-80 backdrop-blur-xl" : ""
       } z-20`}
     >
-      <div className="sm:main-container">
+      <div className="md:main-container sm:px-5">
         <div className="flex sm:flex-row flex-col justify-between items-center">
           <div className="flex flex-row gap-4 items-center text-primary text-[22px]">
             <a
@@ -49,7 +49,9 @@ const Header = () => {
           <a href="mailto:girishubham77@gmail.com">
             <div className="md:flex hidden flex-row gap-2 items-center text-textSecondary hover:text-primary duration-150 transition-all">
               <CiMail className="text-[22px]" />
-              <span className="font-extralight font-karla">GET IN TOUCH</span>
+              <span className="lg:flex hidden font-extralight font-karla">
+                GET IN TOUCH
+              </span>
             </div>
           </a>
         </div>

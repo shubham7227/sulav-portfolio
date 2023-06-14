@@ -20,7 +20,7 @@ const Projects = () => {
         <div className="h-[130px] w-[90px] absolute dots-background right-0 z-0"></div>
       </div>
       <div className="main-container pt-[3rem] px-[1.5rem]">
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-12">
           {projects.map((data) => (
             <ProjectCard key={data.id} data={data} />
           ))}
