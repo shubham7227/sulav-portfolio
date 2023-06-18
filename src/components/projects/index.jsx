@@ -25,9 +25,9 @@ const Projects = () => {
               href="/projects"
               className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 pl-3 pr-4  sm:bg-backgroundSecondary bg-backgroundLight border border-backgroundLight duration-150 transition-all font-light font-karla text-sm hover:bg-backgroundLight z-10"
             >
-              <span className="">
-                Explore <span className="sm:block hidden">More</span>
-              </span>
+              <p className="flex">
+                Explore&nbsp;<span className="sm:block hidden">More</span>
+              </p>
               <BsArrowRight />
             </Link>
           </div>
