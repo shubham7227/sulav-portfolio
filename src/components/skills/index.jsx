@@ -21,7 +21,7 @@ import {
 } from "react-icons/si";
 
 import SkillCard from "./SkillCard";
-import TextContainer from "../hero/TextContainer";
+import TextContainer from "../common/TextContainer";
 import { motion } from "framer-motion";
 import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
 
@@ -31,8 +31,20 @@ const data = [
     title: "React JS",
   },
   {
+    icon: <SiRedux />,
+    title: "Redux",
+  },
+  {
     icon: <FaNode />,
     title: "Node JS",
+  },
+  {
+    icon: <FaStripe />,
+    title: "Stripe",
+  },
+  {
+    icon: <SiFlask />,
+    title: "Flask",
   },
   {
     icon: <SiMongodb />,
@@ -42,17 +54,14 @@ const data = [
     icon: <SiFirebase />,
     title: "Firebase",
   },
+
   {
-    icon: <FaHtml5 />,
-    title: "HTML",
+    icon: <FaWordpressSimple />,
+    title: "WordPress",
   },
   {
-    icon: <FaCss3Alt />,
-    title: "CSS",
-  },
-  {
-    icon: <FaJs />,
-    title: "JavaScript",
+    icon: <SiGraphql />,
+    title: "GraphQL",
   },
   {
     icon: <FaSass />,
@@ -65,34 +74,6 @@ const data = [
   {
     icon: <SiTailwindcss />,
     title: "Tailwind CSS",
-  },
-  {
-    icon: <FaWordpressSimple />,
-    title: "WordPress",
-  },
-  {
-    icon: <SiGraphql />,
-    title: "GraphQL",
-  },
-  {
-    icon: <SiRedux />,
-    title: "Redux",
-  },
-  {
-    icon: <FaStripe />,
-    title: "Stripe",
-  },
-  {
-    icon: <FaPython />,
-    title: "Python",
-  },
-  {
-    icon: <SiFlask />,
-    title: "Flask",
-  },
-  {
-    icon: <FaJava />,
-    title: "Java",
   },
 ];
 

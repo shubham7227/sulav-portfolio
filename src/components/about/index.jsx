@@ -8,7 +8,7 @@ import {
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import Image from "next/image";
 import { profile } from "@/assets";
-import TextContainer from "../hero/TextContainer";
+import TextContainer from "../common/TextContainer";
 
 const About = () => {
   return (

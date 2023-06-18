@@ -13,7 +13,7 @@ import {
   slideOutAnimation,
   wordsContainerNoDelay,
 } from "@/utils/AnimationVarients";
-import TextContainer from "../hero/TextContainer";
+import TextContainer from "../common/TextContainer";
 
 const Contact = () => {
   return (
