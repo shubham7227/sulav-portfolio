@@ -11,7 +11,7 @@ export default function Document() {
       />
       <Head />
 
-      <link rel="canonical" href="https://sulavgiri.com.np" />
+      <link rel="canonical" href="https://www.sulavgiri.com.np" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
         rel="preconnect"
