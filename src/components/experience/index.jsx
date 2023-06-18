@@ -1,14 +1,11 @@
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 
-import ExpeienceData from "../../data/works.json";
+import experienceData from "../../data/works.json";
 import ExperienceCard from "./ExperienceCard";
 import { useState } from "react";
-import {
-  wordsContainer,
-  wordsContainerNoDelay,
-} from "@/utils/AnimationVarients";
-import TextContainer from "../hero/TextContainer";
+import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
+import TextContainer from "../common/TextContainer";
 
 const Experience = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -19,12 +16,12 @@ const Experience = () => {
 
   const settings = {
     dots: true,
-    infinite: ExpeienceData.length > 1 ? true : false,
+    infinite: experienceData.length > 1 ? true : false,
     cssEase: "linear",
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
-    focusOnSelect: ExpeienceData.length > 1 ? true : false,
+    focusOnSelect: experienceData.length > 1 ? true : false,
     draggable: false,
     afterChange: handleAfterChange,
     responsive: [
@@ -60,7 +57,7 @@ const Experience = () => {
       </div>
       <div className="pt-[2rem] md:px-[3rem]">
         <Slider {...settings}>
-          {ExpeienceData.map((entry, key) => (
+          {experienceData.map((entry, key) => (
             <ExperienceCard
               data={entry}
               key={key}

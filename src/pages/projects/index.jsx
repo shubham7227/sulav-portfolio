@@ -1,20 +1,21 @@
-import About from "@/components/about";
-import MailIcon from "@/components/common/MailIcon";
-import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Hero from "@/components/hero";
-import Header from "@/components/common/header/Header";
-import Projects from "@/components/projects";
-import Skills from "@/components/skills";
-import Head from "next/head";
-import SimpleHeader from "@/components/common/SimpleHeader";
+import React from "react";
+import { motion } from "framer-motion";
 
-export default function Home() {
+import projects from "../../data/projects.json";
+import Contact from "@/components/contact";
+import SimpleHeader from "@/components/common/SimpleHeader";
+import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
+import TextContainer from "@/components/common/TextContainer";
+import ProjectCard from "@/components/projects/ProjectCard";
+import MailIcon from "@/components/common/MailIcon";
+import Head from "next/head";
+
+const Projects = () => {
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Full-Stack Software Engineer - Sulav Giri</title>
+        <title>Projects - Sulav Giri</title>
         <meta
           name="description"
           content="Sulav Giri is a software engineer from Nepal with expertise in web development using Node.js and React"
@@ -50,16 +51,36 @@ export default function Home() {
         <meta name="theme-color" content="#1f1f1f" />
       </Head>
       <main className="bg-background">
-        {/* <Header /> */}
         <SimpleHeader />
-        <Hero />
-        <Experience />
-        <Skills />
-        <Projects />
-        <About />
+        <div className="flex flex-row items-center relative pt-[12rem]">
+          <div className="text-center main-container flex flex-col">
+            <motion.h2
+              variants={wordsContainerNoDelay}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              className="heading2 z-10"
+            >
+              <TextContainer text="Projects" />
+            </motion.h2>
+            <p className="font-karla text-textDim font-light">
+              Here are some of the projects that I have contributed to.
+            </p>
+          </div>
+          <div className="h-[100px] w-[120px] absolute dots-background right-0 z-0"></div>
+        </div>
+        <div className="main-container pt-[2rem] px-[1.5rem]">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-12">
+            {projects.map((data) => (
+              <ProjectCard key={data.id} data={data} />
+            ))}
+          </div>
+        </div>
         <Contact />
         <MailIcon />
       </main>
     </>
   );
-}
+};
+
+export default Projects;
