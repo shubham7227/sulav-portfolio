@@ -114,28 +114,28 @@ export const wordsContainer = {
   hidden: {
     opacity: 0,
   },
-  visible: (i = 1) => ({
+  visible: {
     opacity: 1,
     transition: {
-      // delay: 0.2,
-      staggerChildren: 0.06,
-      delayChildren: 0.5 * i,
+      // delay: 5,
+      staggerChildren: 0.08,
+      // delayChildren: 0.5 * i,
     },
-  }),
+  },
 };
 
 export const wordsContainerNoDelay = {
   hidden: {
     opacity: 0,
   },
-  visible: (i = 1) => ({
+  visible: {
     opacity: 1,
     transition: {
       // delay: 0.2,
       staggerChildren: 0.06,
       // delayChildren: 0.5 * i,
     },
-  }),
+  },
 };
 
 export const letterAnimation = {
