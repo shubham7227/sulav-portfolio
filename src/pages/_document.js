@@ -4,13 +4,13 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
-
       <link
         rel="preload"
         as="script"
         href="https://www.googletagmanager.com/gtag/js?id=G-Y20ZWK8XJK"
       />
+      <Head />
+
       <link rel="canonical" href="https://sulavgiri.com.np" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link

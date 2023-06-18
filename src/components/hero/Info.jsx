@@ -36,7 +36,7 @@ const Info = () => {
           SOFTWARE ENGINEER
         </motion.p>
         <motion.h1
-          className="uppercase font-prompt font-semibold sm:text-[4rem] text-[3.2rem] text-primary leading-tight"
+          className="uppercase font-prompt font-semibold sm:text-[4rem] text-[3rem] text-primary leading-tight"
           variants={wordsContainer}
           initial="hidden"
           animate="visible"
