@@ -23,7 +23,7 @@ const Info = () => {
       <div className="flex-none z-10">
         <Link
           href="#contact"
-          className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 px-5  bg-backgroundSecondary border border-backgroundLight duration-150 transition-all font-light font-karla hover:bg-backgroundLight z-10 group"
+          className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 px-5  bg-backgroundSecondary border border-backgroundLight duration-150 transition-all font-light font-karla hover:bg-backgroundLight z-10 sm:group sm:text-base text-sm"
           scroll={false}
         >
           <p className="flex">Connect</p>
