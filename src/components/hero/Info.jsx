@@ -1,15 +1,7 @@
 import { motion } from "framer-motion";
-import {
-  fadeAnimation,
-  fadeAnimation2,
-  scaleOutAnimation,
-  slideOutAnimation,
-  slideOutAnimation3,
-  wordsContainer,
-} from "@/utils/AnimationVarients";
-import TextContainer from "../common/TextContainer";
+import { fadeAnimation2, slideOutAnimation } from "@/utils/AnimationVarients";
 import Link from "next/link";
-import { BsArrowDown, BsArrowRight } from "react-icons/bs";
+import { BsArrowDown } from "react-icons/bs";
 
 const Info = () => {
   return (
@@ -27,7 +19,7 @@ const Info = () => {
         </motion.h1>
         <motion.p
           className="lg:text-[20px] sm:text-[18px] text-textSecondary font-karla max-w-[90%]"
-          variants={slideOutAnimation3}
+          variants={slideOutAnimation}
         >
           I am a computer engineering graduate with exceptional problem solving
           skills. I primarily develop solutions using MERN stack.
@@ -36,7 +28,7 @@ const Info = () => {
       <motion.div
         initial="offscreen"
         animate="onscreen"
-        variants={slideOutAnimation3}
+        variants={slideOutAnimation}
         className="flex-none z-10"
       >
         <Link

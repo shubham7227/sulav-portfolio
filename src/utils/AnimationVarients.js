@@ -7,7 +7,7 @@ export const scaleOutAnimation = {
     scale: 1,
     opacity: 1,
     transition: {
-      delay: 1,
+      delay: 0.5,
       type: "spring",
       damping: 12,
       stiffness: 100,
@@ -53,7 +53,7 @@ export const fadeAnimation2 = {
   onscreen: {
     opacity: 1,
     transition: {
-      delay: 0.3,
+      delay: 0.2,
       type: "tween",
       ease: "easeOut",
       duration: 1,
@@ -70,22 +70,6 @@ export const slideOutAnimation = {
     y: 0,
     opacity: 1,
     transition: {
-      type: "tween",
-      duration: 0.5,
-    },
-  },
-};
-
-export const slideOutAnimation3 = {
-  offscreen: {
-    y: 40,
-    opacity: 0,
-  },
-  onscreen: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      delay: 0.6,
       type: "tween",
       duration: 0.5,
     },
