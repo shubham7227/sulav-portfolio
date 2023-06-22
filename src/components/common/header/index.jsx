@@ -36,11 +36,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 w-full z-20 py-4 ${
-        isScrolled || mobileNavBar
-          ? "bg-background bg-opacity-80 backdrop-blur-xl"
-          : ""
-      } transition-all duration-500 overflow-hidden ${
+      className={`fixed top-0 w-full z-20 py-4 bg-background bg-opacity-80 backdrop-blur-xl transition-all duration-500 overflow-hidden ${
         mobileNavBar ? "h-[216px]" : "h-[80px]"
       }`}
     >

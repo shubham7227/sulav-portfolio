@@ -20,6 +20,7 @@ module.exports = {
         karla: ["Karla", "sans-serif"],
       },
       screens: {
+        xs: "270px",
         sm: "576px",
         md: "768px",
         lg: "992px",

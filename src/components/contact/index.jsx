@@ -48,16 +48,16 @@ const Contact = () => {
         >
           <a
             href="mailto:girishubham77@gmail.com"
-            className="py-3 px-5 flex flex-row gap-2 text-primary bg-backgroundSecondary rounded-xl shadow-md items-center hover:bg-backgroundLight duration-150 transition-all font-light"
+            className="py-3 px-5 flex flex-row gap-2 text-primary bg-backgroundSecondary rounded-xl shadow-md items-center hover:bg-backgroundLight duration-150 transition-all font-light xs:text-base text-xs"
           >
-            <CiMail className="text-[1.4rem]" />
+            <CiMail className="xs:text-[1.4rem] text-[1rem]" />
             <span className="">girishubham77@gmail.com</span>
           </a>
           <a
             href="tel:+977-9866309870"
-            className="py-3 px-5 flex flex-row gap-2 text-primary bg-backgroundSecondary rounded-xl shadow-md items-center hover:bg-backgroundLight duration-150 transition-all font-light"
+            className="py-3 px-5 flex flex-row gap-2 text-primary bg-backgroundSecondary rounded-xl shadow-md items-center hover:bg-backgroundLight duration-150 transition-all font-light xs:text-base text-xs"
           >
-            <CiPhone className="text-[1.4rem]" />
+            <CiPhone className="xs:text-[1.4rem] text-[1rem]" />
             <span className="">+977-9866309870</span>
           </a>
         </motion.div>
@@ -67,7 +67,7 @@ const Contact = () => {
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.2 }}
           variants={scaleOutAnimation}
-          className="flex flex-row gap-4 items-center"
+          className="flex flex-row gap-4 items-center flex-wrap justify-center"
         >
           <a
             href="https://github.com/shubham7227"
@@ -75,7 +75,7 @@ const Contact = () => {
             rel="noreferrer"
           >
             <div className="text-primary bg-backgroundSecondary hover:bg-backgroundLight duration-150 transition-all p-3 rounded-full">
-              <FaGithub className="text-[24px]" />
+              <FaGithub className="xs:text-[1.5rem] text-[1rem]" />
             </div>
           </a>
           <a
@@ -84,7 +84,7 @@ const Contact = () => {
             rel="noreferrer"
           >
             <div className="text-primary bg-backgroundSecondary hover:bg-backgroundLight duration-150 transition-all p-3 rounded-full">
-              <FaLinkedinIn className="text-[24px]" />
+              <FaLinkedinIn className="xs:text-[1.5rem] text-[1rem]" />
             </div>
           </a>
           <a
@@ -93,12 +93,12 @@ const Contact = () => {
             rel="noreferrer"
           >
             <div className="text-primary bg-backgroundSecondary hover:bg-backgroundLight duration-150 transition-all p-3 rounded-full">
-              <FaInstagram className="text-[24px]" />
+              <FaInstagram className="xs:text-[1.5rem] text-[1rem]" />
             </div>
           </a>
           <a href="https://wa.me/8538945130" target="_blank" rel="noreferrer">
             <div className="text-primary bg-backgroundSecondary hover:bg-backgroundLight duration-150 transition-all p-3 rounded-full">
-              <FaWhatsapp className="text-[24px]" />
+              <FaWhatsapp className="xs:text-[1.5rem] text-[1rem]" />
             </div>
           </a>
         </motion.div>
