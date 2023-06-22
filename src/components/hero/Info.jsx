@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { heroAnimation } from "@/utils/AnimationVarients";
 import Link from "next/link";
-import { BsArrowDown } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 
 const Info = () => {
   return (
@@ -23,11 +23,11 @@ const Info = () => {
       <div className="flex-none z-10">
         <Link
           href="#contact"
-          className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 pl-3 pr-4  bg-backgroundSecondary border border-backgroundLight duration-150 transition-all font-light font-karla hover:bg-backgroundLight z-10"
+          className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 px-5  bg-backgroundSecondary border border-backgroundLight duration-150 transition-all font-light font-karla hover:bg-backgroundLight z-10 group"
           scroll={false}
         >
           <p className="flex">Connect</p>
-          <BsArrowDown />
+          <BsArrowRight className="group-hover:rotate-45 duration-300 transition-transform" />
         </Link>
       </div>
     </motion.div>
