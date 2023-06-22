@@ -42,7 +42,7 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="main-container pt-[10rem] mt-[2rem]">
+    <section id="experience" className="main-container pt-[3rem]">
       <div className="text-center flex flex-row items-center relative">
         <motion.h2
           variants={wordsContainerNoDelay}
@@ -51,7 +51,7 @@ const Experience = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="heading2 z-10"
         >
-          <TextContainer text="Work Experience" />
+          <TextContainer text="Experience" />
         </motion.h2>
         <div className="h-[100px] w-[150px] absolute dots-background right-0 z-0"></div>
       </div>
