@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Info from "./Info";
+import { motion } from "framer-motion";
+import { scaleOutAnimation } from "@/utils/AnimationVarients";
 
 const Hero = () => {
   return (
@@ -9,7 +11,13 @@ const Hero = () => {
     >
       <div className="sm:py-[6rem] py-[3rem] lg:px-16 lg:gap-16 px-6 gap-12 relative flex sm:flex-row flex-col justify-between items-center w-full">
         <Info />
-        <div className="basis-5/12 flex items-center justify-center">
+        <motion.div
+          className="basis-5/12 flex items-center justify-center"
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={scaleOutAnimation}
+        >
           <Image
             src="/name.svg"
             className="lg:max-h-[400px] sm:max-h-[300px] max-h-[200px]"
@@ -17,7 +25,7 @@ const Hero = () => {
             height={400}
             width={400}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

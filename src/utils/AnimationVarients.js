@@ -7,11 +7,11 @@ export const scaleOutAnimation = {
     scale: 1,
     opacity: 1,
     transition: {
+      delay: 1,
       type: "spring",
       damping: 12,
-      //   bounce: 0.5,
       stiffness: 100,
-      duration: 1,
+      // duration: 1.5,
     },
   },
 };
@@ -41,7 +41,22 @@ export const fadeAnimation = {
     transition: {
       type: "tween",
       ease: "easeOut",
-      duration: 0.5,
+      duration: 1,
+    },
+  },
+};
+
+export const fadeAnimation2 = {
+  offscreen: {
+    opacity: 0,
+  },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+      type: "tween",
+      ease: "easeOut",
+      duration: 1,
     },
   },
 };
@@ -55,6 +70,22 @@ export const slideOutAnimation = {
     y: 0,
     opacity: 1,
     transition: {
+      type: "tween",
+      duration: 0.5,
+    },
+  },
+};
+
+export const slideOutAnimation3 = {
+  offscreen: {
+    y: 40,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.6,
       type: "tween",
       duration: 0.5,
     },
