@@ -46,7 +46,7 @@ const Header = () => {
             href="/"
             className="font-karla text-[2rem] font-bold tracking-tighter hover:text-primary text-textSecondary transition-all duration-150 px-4"
           >
-            sulav
+            SG
           </Link>
           <LongNavbar data={navData} />
           <div className="sm:hidden block">
