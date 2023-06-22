@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section id="projects" className="pt-[6rem]">
       <div className="flex flex-row items-center relative">
-        <div className="main-container flex xs:flex-row flex-col xs:items-center xs:gap-0 gap-3 relative sm:px-0 px-4">
+        <div className="main-container flex flex-row items-center relative sm:px-0 px-4">
           <motion.h2
             variants={wordsContainerNoDelay}
             initial="hidden"

@@ -7,7 +7,6 @@ export const scaleOutAnimation = {
     scale: 1,
     opacity: 1,
     transition: {
-      delay: 0.5,
       type: "spring",
       damping: 12,
       stiffness: 100,
@@ -16,18 +15,18 @@ export const scaleOutAnimation = {
   },
 };
 
-export const scaleInAnimation = {
+export const heroImageAnimation = {
   offscreen: {
-    scale: 1.8,
+    scale: 0.5,
     opacity: 0,
   },
   onscreen: {
     scale: 1,
     opacity: 1,
     transition: {
-      type: "tween",
-      duration: 1,
-      delay: 1,
+      delay: 0.5,
+      type: "spring",
+      damping: 12,
     },
   },
 };
@@ -46,16 +45,17 @@ export const fadeAnimation = {
   },
 };
 
-export const fadeAnimation2 = {
+export const heroAnimation = {
   offscreen: {
+    y: 60,
     opacity: 0,
   },
   onscreen: {
+    y: 0,
     opacity: 1,
     transition: {
-      delay: 0.2,
+      delay: 0.3,
       type: "tween",
-      ease: "easeOut",
       duration: 1,
     },
   },
