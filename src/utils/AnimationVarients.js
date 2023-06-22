@@ -24,7 +24,7 @@ export const heroImageAnimation = {
     x: 0,
     opacity: 1,
     transition: {
-      delay: 0.2,
+      delay: 0.1,
       type: "tween",
       ease: "easeOut",
       duration: 0.8,
@@ -41,7 +41,7 @@ export const heroAnimation = {
     x: 0,
     opacity: 1,
     transition: {
-      delay: 0.2,
+      delay: 0.1,
       type: "tween",
       ease: "easeOut",
       duration: 0.8,
