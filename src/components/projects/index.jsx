@@ -23,7 +23,7 @@ const Projects = () => {
           <div className="flex-none z-10">
             <Link
               href="/projects"
-              className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 pl-3 pr-4  sm:bg-backgroundSecondary bg-backgroundLight border border-backgroundLight duration-150 transition-all font-light font-karla text-sm hover:bg-backgroundLight z-10"
+              className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 pl-4 pr-3  sm:bg-backgroundSecondary bg-backgroundLight border border-backgroundLight duration-150 transition-all font-light font-karla text-sm hover:bg-backgroundLight z-10"
             >
               <p className="flex">
                 Explore&nbsp;<span className="sm:block hidden">More</span>
