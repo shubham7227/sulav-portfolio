@@ -1,12 +1,7 @@
 import { motion } from "framer-motion";
 import { CiMail, CiPhone } from "react-icons/ci";
 import Footer from "./Footer";
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import {
   fadeAnimation,
   scaleOutAnimation,
@@ -14,8 +9,12 @@ import {
   wordsContainerNoDelay,
 } from "@/utils/AnimationVarients";
 import TextContainer from "../common/TextContainer";
+import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";
 
 const Contact = () => {
+  const { phone, email, githubUrl, linkedInUrl, whatsappUrl } =
+    usePageGlobalStore(getProfileData);
+
   return (
     <section id="contact" className="main-container">
       <div className="py-[5rem] flex flex-col justify-center items-center gap-8">
@@ -44,21 +43,21 @@ const Contact = () => {
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeAnimation}
-          className="flex sm:flex-row flex-col sm:gap-8 gap-4 items-center"
+          className="flex sm:flex-row flex-col sm:gap-4 gap-4 items-center"
         >
           <a
-            href="mailto:girishubham77@gmail.com"
+            href={"mailto:" + email}
             className="py-3 px-5 flex flex-row gap-2 text-primary bg-backgroundSecondary rounded-xl shadow-md items-center hover:bg-backgroundLight duration-150 transition-all font-light text-base"
           >
             <CiMail className="text-[1.4rem]" />
-            <span className="">girishubham77@gmail.com</span>
+            <span className="">{email}</span>
           </a>
           <a
-            href="tel:+977-9866309870"
+            href={"tel:" + phone}
             className="py-3 px-5 flex flex-row gap-2 text-primary bg-backgroundSecondary rounded-xl shadow-md items-center hover:bg-backgroundLight duration-150 transition-all font-light text-base"
           >
             <CiPhone className="text-[1.4rem]" />
-            <span className="">+977-9866309870</span>
+            <span className="">{phone}</span>
           </a>
         </motion.div>
 
@@ -69,38 +68,24 @@ const Contact = () => {
           variants={scaleOutAnimation}
           className="flex flex-row gap-4 items-center flex-wrap justify-center"
         >
-          <a
-            href="https://github.com/shubham7227"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={githubUrl} target="_blank" rel="noreferrer">
             <div className="text-primary bg-backgroundSecondary hover:bg-backgroundLight duration-150 transition-all p-3 rounded-full">
               <FaGithub className="text-[1.5rem]" />
             </div>
           </a>
-          <a
-            href="https://www.linkedin.com/in/sulav-giri-945870202/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={linkedInUrl} target="_blank" rel="noreferrer">
             <div className="text-primary bg-backgroundSecondary hover:bg-backgroundLight duration-150 transition-all p-3 rounded-full">
               <FaLinkedinIn className="text-[1.5rem]" />
             </div>
           </a>
-          <a
-            href="https://www.instagram.com/sulav.7/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="text-primary bg-backgroundSecondary hover:bg-backgroundLight duration-150 transition-all p-3 rounded-full">
-              <FaInstagram className="text-[1.5rem]" />
-            </div>
-          </a>
-          <a href="https://wa.me/8538945130" target="_blank" rel="noreferrer">
-            <div className="text-primary bg-backgroundSecondary hover:bg-backgroundLight duration-150 transition-all p-3 rounded-full">
-              <FaWhatsapp className="text-[1.5rem]" />
-            </div>
-          </a>
+
+          {whatsappUrl && (
+            <a href={whatsappUrl} target="_blank" rel="noreferrer">
+              <div className="text-primary bg-backgroundSecondary hover:bg-backgroundLight duration-150 transition-all p-3 rounded-full">
+                <FaWhatsapp className="text-[1.5rem]" />
+              </div>
+            </a>
+          )}
         </motion.div>
       </div>
       <Footer />

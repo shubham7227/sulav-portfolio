@@ -1,4 +1,5 @@
 import { slideOutAnimation } from "@/utils/AnimationVarients";
+import { sanityImageUrlFor } from "@/utils/useSanityImageUrl";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
@@ -16,7 +17,11 @@ const ProjectCard = ({ data }) => {
           className="w-full overflow-hidden rounded-xl"
         >
           <Image
-            src={data.featuredImage}
+            src={
+              data.featuredImage?.src
+                ? data.featuredImage.src
+                : sanityImageUrlFor(data.featuredImage).height(400).url()
+            }
             className="object-cover rounded-xl hover:scale-110 duration-500 transition-all"
             alt=""
             height={379}

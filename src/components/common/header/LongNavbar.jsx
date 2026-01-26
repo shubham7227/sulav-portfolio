@@ -2,9 +2,11 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";
 
 const LongNavbar = ({ data }) => {
   const router = useRouter();
+  const { githubUrl, linkedInUrl } = usePageGlobalStore(getProfileData);
 
   return (
     <nav>
@@ -24,7 +26,7 @@ const LongNavbar = ({ data }) => {
         ))}
         <div className="flex flex-row gap-4 items-center text-primary text-[22px]">
           <a
-            href="https://www.linkedin.com/in/sulav-giri-945870202/"
+            href={linkedInUrl}
             target="_blank"
             rel="noreferrer"
             className="hover:scale-125 duration-300 transition-all"
@@ -32,7 +34,7 @@ const LongNavbar = ({ data }) => {
             <FaLinkedinIn />
           </a>
           <a
-            href="https://github.com/shubham7227"
+            href={githubUrl}
             target="_blank"
             rel="noreferrer"
             className="hover:scale-125 duration-300 transition-all"

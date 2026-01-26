@@ -1,14 +1,17 @@
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 
-import experienceData from "../../data/works.json";
 import ExperienceCard from "./ExperienceCard";
 import { useState } from "react";
 import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
 import TextContainer from "../common/TextContainer";
+import usePageGlobalStore, {
+  getExperienceData,
+} from "@/store/usePageGlobalStore";
 
 const Experience = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const experienceData = usePageGlobalStore(getExperienceData);
 
   const handleAfterChange = (index) => {
     setActiveSlide(index);

@@ -4,15 +4,12 @@ import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
-import Head from "next/head";
 import Header from "@/components/common/header";
+import fetchPageData from "@/utils/fetchPageData";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Full-Stack Software Engineer - Sulav Giri</title>
-      </Head>
       <main className="bg-background">
         <Header />
         <Hero />
@@ -24,4 +21,8 @@ export default function Home() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  return await fetchPageData();
 }
