@@ -10,6 +10,7 @@ const fetchDatafromSanity = async () => {
       `;
 
   const data = await sanityClient.fetch(query);
+  console.log(JSON.stringify(data));
   return { props: { pageData: data }, revalidate: 60 };
 };
 

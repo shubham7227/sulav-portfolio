@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     if (
       pageData &&
-      pageData?.experince?.length > 0 &&
+      pageData?.experience?.length > 0 &&
       pageData?.projects?.length > 0 &&
       pageData?.profile
     ) {
