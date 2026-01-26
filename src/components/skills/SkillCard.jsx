@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { slideOutAnimation2 } from "@/utils/animationVarients";
+import { slideOutAnimation2 } from "@/utils/AnimationVarients";
 import { iconMap } from "./IconMap";
 
 const SkillCard = ({ data }) => {

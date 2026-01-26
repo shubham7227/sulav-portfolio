@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { slideOutAnimation } from "@/utils/animationVarients";
+import { slideOutAnimation } from "@/utils/AnimationVarients";
 
 const ExperienceCard = ({ data, active }) => {
   return (

@@ -3,7 +3,7 @@ import {
   slideLeftAnimation,
   slideRightAnimation,
   wordsContainerNoDelay,
-} from "@/utils/animationVarients";
+} from "@/utils/AnimationVarients";
 
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import Image from "next/image";

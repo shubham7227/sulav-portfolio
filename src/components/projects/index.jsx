@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { wordsContainerNoDelay } from "@/utils/animationVarients";
+import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
 
 import ProjectCard from "./ProjectCard";
 import TextContainer from "../common/TextContainer";

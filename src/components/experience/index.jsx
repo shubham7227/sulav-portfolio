@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import ExperienceCard from "./ExperienceCard";
 import { useState } from "react";
-import { wordsContainerNoDelay } from "@/utils/animationVarients";
+import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
 import TextContainer from "../common/TextContainer";
 import usePageGlobalStore, {
   getExperienceData,

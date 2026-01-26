@@ -1,4 +1,4 @@
-import { slideOutAnimation } from "@/utils/animationVarients";
+import { slideOutAnimation } from "@/utils/AnimationVarients";
 import { sanityImageUrlFor } from "@/utils/useSanityImageUrl";
 import { motion } from "framer-motion";
 

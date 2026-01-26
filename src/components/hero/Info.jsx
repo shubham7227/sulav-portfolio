@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { heroAnimation } from "@/utils/animationVarients";
+import { heroAnimation } from "@/utils/AnimationVarients";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import Contact from "@/components/contact";
-import { wordsContainerNoDelay } from "@/utils/animationVarients";
+import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
 import TextContainer from "@/components/common/TextContainer";
 import Head from "next/head";
 import Header from "@/components/common/header";

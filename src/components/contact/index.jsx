@@ -7,7 +7,7 @@ import {
   scaleOutAnimation,
   slideOutAnimation,
   wordsContainerNoDelay,
-} from "@/utils/animationVarients";
+} from "@/utils/AnimationVarients";
 import TextContainer from "../common/TextContainer";
 import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";
 

@@ -1,5 +1,5 @@
 import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";
-import { heroImageAnimation } from "@/utils/animationVarients";
+import { heroImageAnimation } from "@/utils/AnimationVarients";
 import { sanityImageUrlFor } from "@/utils/useSanityImageUrl";
 import { motion } from "framer-motion";
 import Image from "next/image";

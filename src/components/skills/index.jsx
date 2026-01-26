@@ -1,7 +1,7 @@
 import SkillCard from "./SkillCard";
 import TextContainer from "../common/TextContainer";
 import { motion } from "framer-motion";
-import { wordsContainerNoDelay } from "@/utils/animationVarients";
+import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
 import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";
 
 const Skills = () => {
