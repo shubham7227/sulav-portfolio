@@ -4,6 +4,6 @@ export const sanityClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   token: process.env.SANITY_API_TOKEN,
-  apiVersion: "2025-11-06", // use a fixed date
-  useCdn: false, // `false` if you want fresh data
+  apiVersion: "2026-01-26",
+  useCdn: true,
 });
