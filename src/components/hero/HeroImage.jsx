@@ -1,9 +1,13 @@
-import { heroImageAnimation } from "@/utils/AnimationVarients";
+import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";
+import { heroImageAnimation } from "@/utils/animationVarients";
+import { sanityImageUrlFor } from "@/utils/useSanityImageUrl";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const HeroImage = () => {
+  const { heroImage } = usePageGlobalStore(getProfileData);
+
   return (
     <motion.div
       className="basis-5/12 flex items-center justify-center"
@@ -13,7 +17,11 @@ const HeroImage = () => {
       variants={heroImageAnimation}
     >
       <Image
-        src="/name.svg"
+        src={
+          heroImage?.src
+            ? heroImage.src
+            : sanityImageUrlFor(heroImage).height(400).url()
+        }
         className="lg:max-h-[400px] sm:max-h-[300px] max-h-[200px]"
         alt=""
         height={400}

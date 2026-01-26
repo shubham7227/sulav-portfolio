@@ -1,83 +1,11 @@
-import {
-  FaBootstrap,
-  FaCss3Alt,
-  FaHtml5,
-  FaJava,
-  FaJs,
-  FaNode,
-  FaPython,
-  FaReact,
-  FaSass,
-  FaStripe,
-  FaWordpressSimple,
-} from "react-icons/fa";
-import {
-  SiFirebase,
-  SiFlask,
-  SiGraphql,
-  SiMongodb,
-  SiRedux,
-  SiTailwindcss,
-} from "react-icons/si";
-
 import SkillCard from "./SkillCard";
 import TextContainer from "../common/TextContainer";
 import { motion } from "framer-motion";
-import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
-
-const data = [
-  {
-    icon: <FaReact />,
-    title: "React JS",
-  },
-  {
-    icon: <SiRedux />,
-    title: "Redux",
-  },
-  {
-    icon: <FaNode />,
-    title: "Node JS",
-  },
-  {
-    icon: <FaStripe />,
-    title: "Stripe",
-  },
-  {
-    icon: <SiFlask />,
-    title: "Flask",
-  },
-  {
-    icon: <SiMongodb />,
-    title: "MongoDB",
-  },
-  {
-    icon: <SiFirebase />,
-    title: "Firebase",
-  },
-
-  {
-    icon: <FaWordpressSimple />,
-    title: "WordPress",
-  },
-  {
-    icon: <SiGraphql />,
-    title: "GraphQL",
-  },
-  {
-    icon: <FaSass />,
-    title: "SASS",
-  },
-  {
-    icon: <FaBootstrap />,
-    title: "Bootstrap",
-  },
-  {
-    icon: <SiTailwindcss />,
-    title: "Tailwind CSS",
-  },
-];
+import { wordsContainerNoDelay } from "@/utils/animationVarients";
+import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";
 
 const Skills = () => {
+  const { skill } = usePageGlobalStore(getProfileData);
   return (
     <section id="skills" className="pt-[10rem]">
       <div className="py-[2rem}">
@@ -94,10 +22,10 @@ const Skills = () => {
           </motion.h2>
         </div>
         <div className="main-container pt-[3rem] px-[1.5rem] w-full overflow-hidden">
-          <div className="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-4 grid-cols-3 md:gap-x-12 md:gap-y-8 gap-x-4 gap-y-4 text-primary">
-            {data.map((entry, key) => (
-              <div className="col-span-1" key={key}>
-                <SkillCard icon={entry.icon} title={entry.title} />
+          <div className="grid lg:grid-cols-8 md:grid-cols-6 sm:grid-cols-6 grid-cols-4 md:gap-x-4 md:gap-y-4 gap-x-2 gap-y-2 text-primary">
+            {skill.map((entry) => (
+              <div className="col-span-1" key={entry}>
+                <SkillCard data={entry} />
               </div>
             ))}
           </div>

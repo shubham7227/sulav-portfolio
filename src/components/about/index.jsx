@@ -3,14 +3,17 @@ import {
   slideLeftAnimation,
   slideRightAnimation,
   wordsContainerNoDelay,
-} from "@/utils/AnimationVarients";
+} from "@/utils/animationVarients";
 
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import Image from "next/image";
-import { profile } from "@/assets";
 import TextContainer from "../common/TextContainer";
+import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";
+import { sanityImageUrlFor } from "@/utils/useSanityImageUrl";
 
 const About = () => {
+  const { image, about, resumeUrl } = usePageGlobalStore(getProfileData);
+
   return (
     <section id="about" className="pt-[7rem]">
       <div className="bg-backgroundSecondary w-full overflow-hidden">
@@ -35,9 +38,11 @@ const About = () => {
                 className="w-full z-10"
               >
                 <Image
-                  src={profile}
+                  src={image?.src ? image.src : sanityImageUrlFor(image).url()}
                   className="rounded-xl h-full w-full object-cover z-10"
                   alt="Profile"
+                  width={600}
+                  height={600}
                 />
               </motion.div>
             </div>
@@ -50,20 +55,10 @@ const About = () => {
             >
               <h2 className="heading2 sm:block hidden">About</h2>
               <div className="flex flex-col gap-2">
-                <p className="text-primary font-karla font-light">
-                  Hey, I am Sulav Giri, an avid Software Developer from Nepal
-                  with a strong foundation in computer science. My expertise
-                  lies in web development using the MERN stack. However,
-                  I&apos;m equally enthusiastic about Machine Learning and
-                  Blockchain Technologies. I intent to dive deeper into web
-                  development and constantly strive to integrate modern
-                  technologies into web development to enhance user experience,
-                  improve performance and ensure reliability.
-                  <br />
-                  I&apos;m looking forward to connect with fellow developers and
-                  industry professionals to exchange ideas, share knowledge, and
-                  embark on an incredible journey of growth and innovation.
-                </p>
+                <p
+                  className="text-primary font-karla font-light"
+                  dangerouslySetInnerHTML={{ __html: about }}
+                />
                 <div>
                   <h3 className="heading3">Education</h3>
                   <div className="">
@@ -83,7 +78,7 @@ const About = () => {
               </div>
               <div className="w-max">
                 <a
-                  href="https://drive.google.com/file/d/1UXDc7cyS6_gwEzkHbQaEYnbg82IRLg6e/view?usp=sharing"
+                  href={resumeUrl}
                   target="_blank"
                   className="w-max flex flex-row gap-3 items-center text-primary rounded-xl py-2 pl-4 pr-5 bg-backgroundSecondary border border-backgroundLight duration-150 transition-all font-light font-karla hover:bg-backgroundLight"
                   rel="noreferrer"

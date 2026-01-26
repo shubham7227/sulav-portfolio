@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import projects from "../../data/projects.json";
 import Contact from "@/components/contact";
-import { wordsContainerNoDelay } from "@/utils/AnimationVarients";
+import { wordsContainerNoDelay } from "@/utils/animationVarients";
 import TextContainer from "@/components/common/TextContainer";
-import ProjectCard from "@/components/projects/ProjectCard";
 import Head from "next/head";
 import Header from "@/components/common/header";
+import ProjectList from "@/components/projects/ProjectList";
+import fetchDatafromSanity from "@/utils/fetchPageData";
 
 export default function Projects() {
   return (
@@ -35,14 +35,14 @@ export default function Projects() {
           <div className="h-[100px] w-[120px] absolute dots-background right-0 z-0"></div>
         </div>
         <div className="main-container pt-[2rem] px-[1.5rem]">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-12">
-            {projects.map((data) => (
-              <ProjectCard key={data.id} data={data} />
-            ))}
-          </div>
+          <ProjectList />
         </div>
         <Contact />
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  return await fetchDatafromSanity();
 }

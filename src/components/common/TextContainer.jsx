@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { letterAnimation } from "@/utils/AnimationVarients";
+import { letterAnimation } from "@/utils/animationVarients";
 
 const TextContainer = ({ text }) => {
   const letters = Array.from(text);

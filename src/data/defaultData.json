@@ -1,0 +1,251 @@
+{
+    "experience": [
+        {
+            "_id": 3,
+            "title": "Associate Software Development Engineer 2",
+            "company": "Publicis Sapient, Gurugram, India",
+            "dateStarted": "Jan, 2024",
+            "dateEnd": "Present",
+            "description": [
+                "Architecting and managing cloud-native solutions for global hospitality leaders, including a high-stakes migration to AliCloud to meet regional data compliance standards.",
+                "Driving system reliability and performance, successfully boosting core web vitals and reducing API latency by 20%.",
+                "Implementing robust compliance solutions within large-scale distributed systems with a focus on zero-regression delivery.",
+                "Honored with 'Rising Star' and 'Learning Mindset' awards for excellence within the Travel and Hospitality vertical."
+            ]
+        },
+        {
+            "_id": 2,
+            "title": "Software Engineer",
+            "company": "Micro SaaS Capital, Remote",
+            "dateStarted": "Aug, 2023",
+            "dateEnd": "Jan, 2024",
+            "description": [
+                "Engineered a personalized drip-email automation system that directly contributed to a 40% increase in customer conversion.",
+                "Streamlined enterprise security by integrating SSO across multiple providers like Okta, Auth0, and Azure Entra ID using OpenID Connect and SAML 2.0.",
+                "Optimized production stability by refactoring critical third-party integrations, resolving memory overload issues and ensuring consistent API reliability."
+            ]
+        },
+        {
+            "_id": 1,
+            "title": "Front-end Developer Intern",
+            "company": "Tuna Technology Pvt. Ltd., Nepal",
+            "dateStarted": "Sep, 2022",
+            "dateEnd": "Jan, 2023",
+            "description": [
+                "Developed a highly responsive, efficient, and scalable front-end for a web application using the React framework.",
+                "Implemented Redux to streamline and optimize data flow within the application.",
+                "Leveraged WordPress as a CMS, seamlessly integrating it with React through Apollo.",
+                "Applied Tailwind CSS, SASS, and Bootstrap to create visually appealing and cohesive user interfaces for the application."
+            ]
+        }
+    ],
+    "profile": {
+        "_id": "profile_default",
+        "about": "I'm a Software Engineer who loves the challenge of turning complex logic into seamless user experiences. My journey began in the scenic landscapes of Nepal and led me to the fast-paced tech world of India, where I now build enterprise-scale solutions. I specialize in Java/Spring Boot and the modern web stack, optimizing performance, ensuring data compliance, or architecting for the cloud. To me, coding isn't just about syntax; it's about building reliable systems that people can trust. <br /><br /> When I'm not coding, you'll find me exploring new places, watching movies, or hiking in the great outdoors. I'm looking forward to connect with fellow developers and industry professionals to exchange ideas, share knowledge, and embark on an incredible journey of growth and innovation.",
+        "description": "Software Engineer specialized in building high-performance distributed systems and cloud-native solutions.",
+        "email": "girishubham77@gmail.com",
+        "githubUrl": "https://github.com/shubham7227",
+        "heroImage": {
+            "src": "/name.svg"
+        },
+        "image": {
+            "src": "/profile.jpg"
+        },
+        "linkedInUrl": "https://www.linkedin.com/in/sulav-giri-945870202/",
+        "phone": "+91-8538945130",
+        "seo": {
+            "canonicalUrl": "https://www.sulavgiri.com.np",
+            "keywords": [
+                "Sulav Giri",
+                "AI Engineer",
+                "Software Engineer Gurugram",
+                "Generative AI",
+                "Model Context Protocol (MCP)",
+                "Full-Stack Software Engineer India",
+                "Java Spring Boot Developer",
+                "Cloud-Native Systems Engineer",
+                "AI Solutions",
+                "Next.js Expert"
+            ],
+            "metaDescription": "Software Engineer specializing in Java/Spring Boot and Agentic AI. Building resilient distributed systems and LLM-powered agents.",
+            "metaTitle": "Sulav Giri | Software Engineer | Agentic AI & Cloud",
+            "noIndex": false,
+            "ogDescription": "From enterprise cloud migrations to Agentic AI workflows. Explore the work of Sulav Giri, a Software Engineer focused on high-performance systems.",
+            "ogTitle": "Sulav Giri | Software Engineer & AI Agents",
+            "twitterCard": "summary_large_image"
+        },
+        "skill": [
+            "Java:java",
+            "Spring Boot:springboot",
+            "Next JS:nextjs",
+            "TypeScript:typescript",
+            "Microservices:microservices",
+            "AWS:aws",
+            "AliCloud:alicloud",
+            "Docker:docker",
+            "Kubernetes:kubernetes",
+            "Jenkins:jenkins",
+            "NGINX:nginx",
+            "GraphQL:graphql",
+            "PostgreSQL:postgresql",
+            "Node JS:nodejs",
+            "React:react",
+            "Python:python",
+            "GEN AI & Agents:genai",
+            "RAG & MCP:rag",
+            "Dynatrace:dynatrace"
+        ],
+        "title": "I build reliable systems for a distributed world",
+        "whatsappUrl": "https://wa.me/8538945130",
+        "resumeUrl": "https://drive.google.com/file/d/1UXDc7cyS6_gwEzkHbQaEYnbg82IRLg6e/view?usp=sharing"
+    },
+    "projects": [
+        {
+            "_id": 8,
+            "title": "Growcomers: Online Grocery Store",
+            "featuredImage": {
+                "src": "/Growcomers.png"
+            },
+            "url": "https://growcomers.netlify.app/",
+            "stack": [
+                "Web Application",
+                "Stripe",
+                "React",
+                "Node.js",
+                "Flask",
+                "Machine Learning",
+                "Blockchain"
+            ],
+            "description": "<p>Growcomers is a full-fledged E-commerce platform with: <ul style='list-style: disc; padding-left: 1rem;'><li>Hybrid product recommender system of neural collaborative filtering, content-based filtering and popularity recommender</li><li> Chatbot</li><li>Fuzzy matching based smart search</li><li>Online payments using credit cards and cryptocurrency</li><li>Invoice generation</li><li>Automatic email delivery.</li></ul></p>"
+        },
+        {
+            "_id": 7,
+            "title": "Paisa: Expense Tracker",
+            "featuredImage": {
+                "src": "/Paisa.png"
+            },
+            "url": "https://paisha-app.web.app/",
+            "stack": [
+                "Web Application",
+                "React",
+                "Firebase",
+                "Tailwind"
+            ],
+            "description": "<p>Paisa is an online expense tracking application that allows users to record their expense and income with respect to their banks and wallets which makes the tracking easier. In this project, I was involved in frontend development and firestore database integration.</p>"
+        },
+        {
+            "_id": 6,
+            "title": "Tuna Technology Pvt. Ltd.",
+            "featuredImage": {
+                "src": "/Tuna.png"
+            },
+            "url": "https://tunatechnology.com",
+            "stack": [
+                "Website",
+                "Next JS",
+                "WordPress",
+                "SASS",
+                "Bootstrap"
+            ],
+            "description": "<p>Tuna Technology is a cutting-edge technology company that provides various products for businesses to scale and transform. The website was redesigned with new UI and upgraded to use Next JS and wordpress CMS. And I was involved in frontend development, wordpress implementation and wordpress integration using Apollo.</p>"
+        },
+        {
+            "_id": 5,
+            "title": "Siddhartha Co-operative Ltd.",
+            "featuredImage": {
+                "src": "/Siddhartha.png"
+            },
+            "url": "https://siddharthacooperative.com",
+            "stack": [
+                "Website",
+                "React",
+                "WordPress",
+                "SASS",
+                "Bootstrap"
+            ],
+            "description": "<p>This informative website serves as a point of information online for Siddhartha multipurpose co-operative organization. In this project, I was involved in frontend development, wordpress implementation and wordpress integration using Apollo.</p>"
+        },
+        {
+            "_id": 4,
+            "title": "Joraum Solutions Pvt. Ltd.",
+            "featuredImage": {
+                "src": "/Joraum.png"
+            },
+            "url": "https://joraum.com",
+            "stack": [
+                "Website",
+                "React",
+                "WordPress",
+                "SASS",
+                "Bootstrap"
+            ],
+            "description": "<p>JSPL is a product sales and services company. The website was upgraded from a static website to React and Wordpress CMS without changing the UI. I was involved in overall process of upgrading the website. </p>"
+        },
+        {
+            "_id": 3,
+            "title": "Feedback Application",
+            "featuredImage": {
+                "src": "/Feedback.png"
+            },
+            "url": "https://feedbackscreen.netlify.app",
+            "stack": [
+                "Web Application",
+                "React",
+                "Node.js",
+                "MongoDB",
+                "Tailwind",
+                "Chart.js"
+            ],
+            "description": "<p>The feedback application records the feedback of the user for a given question. The application provides: <ul style='list-style: disc; padding-left: 1rem;'><li>Updation of question displayed in the feedback screen</li><li>Automatic recording of image of the person giving the feedback along with date and time.</li><li>Display the report for the admin along with filters, graphs and customizations</li><li>Downloading of report in XLS format</li><li>Printing of the report</li></ul></p>"
+        },
+        {
+            "_id": 2,
+            "title": "Intrance: Online Entrance Preparation",
+            "featuredImage": {
+                "src": "/Intrance.png"
+            },
+            "url": "https://intrance.netlify.app/",
+            "stack": [
+                "Web Application",
+                "React",
+                "Node.js",
+                "MongoDB",
+                "Tailwind",
+                "Redux"
+            ],
+            "description": "<p>Intrance is an online competitive entrance preparation platform for different examinations where the student can take part in weekly competitive examinations. The platform provides: <ul style='list-style: disc; padding-left: 1rem;'><li>Admin panel to manage questions, create weekly exam with customizations, view results and manage users</li><li>Competitive weekly examinations for different topics with leaderboards</li><li>Practice session where the difficulty level of questions is updated based on past answers</li></ul></p>"
+        },
+        {
+            "_id": 1,
+            "title": "CryptoVote: Blockchain Secured Voting Application",
+            "featuredImage": {
+                "src": "/Cryptovote.png"
+            },
+            "url": "https://github.com/shubham7227/Cryptovote",
+            "stack": [
+                "Android",
+                "Java",
+                "FXML",
+                "Firebase",
+                "Ethereum"
+            ],
+            "description": "<p>Cryptovote is an android application designed for decentralized voting that runs on a Virtual Ethereum Network (EVN). The main application was designed using Core Java and the blockchain functionalities were embedded with the use of Solidity.</p>"
+        },
+        {
+            "_id": 0,
+            "title": "College Event Management System",
+            "featuredImage": {
+                "src": "/EventMgmt.png"
+            },
+            "url": "https://eventics.onrender.com",
+            "stack": [
+                "Web Application",
+                "JavaScript",
+                "Node.js",
+                "MySQL",
+                "HTML/CSS"
+            ],
+            "description": "<p>CEMS is a website for clubs in college to effectively manage the events and for students to find all the ongoing events on a single platform.</p>"
+        }
+    ]
+}
