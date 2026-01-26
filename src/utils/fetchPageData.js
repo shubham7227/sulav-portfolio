@@ -5,7 +5,7 @@ const fetchDatafromSanity = async () => {
         {
           "profile": *[_type == "profile"][0],
           "projects": *[_type == "project"] | order(order asc),
-          "experience": *[_type == "experience"] | order(startDate desc)
+          "experience": *[_type == "experience"] | order(order desc)
         }
       `;
 
