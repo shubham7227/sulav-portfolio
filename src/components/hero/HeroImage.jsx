@@ -2,7 +2,6 @@ import usePageGlobalStore, { getProfileData } from "@/store/usePageGlobalStore";
 import { heroImageAnimation } from "@/utils/AnimationVarients";
 import { sanityImageUrlFor } from "@/utils/useSanityImageUrl";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import React from "react";
 
 const HeroImage = () => {
@@ -16,7 +15,8 @@ const HeroImage = () => {
       viewport={{ once: true, amount: 0.2 }}
       variants={heroImageAnimation}
     >
-      <Image
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src={
           heroImage?.src
             ? heroImage.src
